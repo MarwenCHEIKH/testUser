@@ -2,7 +2,7 @@ import "./sidebar.css";
 import {
   LineStyle,
   PermIdentity,
-  Storefront,
+  PostAdd,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ export default function Sidebar() {
             </Link>
             <Link to="/userPosts" className="link">
               <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
+                <PostAdd className="sidebarIcon" />
                 Posts
               </li>
             </Link>

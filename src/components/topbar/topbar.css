@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .logo {
@@ -14,6 +13,5 @@
   font-size: 30px;
   color: darkblue;
   cursor: pointer;
-  position: fixed;
-  margin-top: 40px;
+
 }

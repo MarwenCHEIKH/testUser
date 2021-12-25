@@ -17,6 +17,7 @@
     "react-fetch-hook": "^1.8.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^8.1.0",
     "recharts": "^2.0.9",
     "web-vitals": "^1.0.1"
   },
