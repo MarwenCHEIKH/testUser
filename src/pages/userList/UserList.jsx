@@ -23,7 +23,7 @@ export default function UserList() {
   
 const handleDelete = async (id) => {
   if (window.confirm('Are you sure you want to delete this user?')) {
-    await fetch('http://localhost:5000/api/users/'+id, { method: 'DELETE' });
+    await fetch('https://jsonplaceholder.typicode.com/users/'+id, { method: 'DELETE' });
   }
 
 }
@@ -33,7 +33,7 @@ const handleDelete = async (id) => {
   const columns = [
     { field: "id", headerName: "ID", width: 40 },
 
-    { field: "name", headerName: "name", width: 120, },
+    { field: "name", headerName: "Name", width: 120, },
     
     { field: "username", headerName: "Username", width: 120, },
     
@@ -67,9 +67,9 @@ const handleDelete = async (id) => {
 
     { field: "phone", headerName: "Phone", width: 120  },
 
-    { field: "website", headerName: "website", width: 150  },
+    { field: "website", headerName: "Website", width: 150  },
 
-    { field: "company", headerName: "company", width: 150 , renderCell: (params) => {
+    { field: "company", headerName: "Company", width: 150 , renderCell: (params) => {
       return (
         <div>
           {params.row.company.name}
@@ -86,9 +86,6 @@ const handleDelete = async (id) => {
             <>
               <Link to={"/user/" + params.row.id}>
                 <button className="userListEdit">Edit</button>
-              </Link>
-              <Link to={"/post/" + params.row.id}>
-                <button className="userListPost">See Post</button>
               </Link>
               <DeleteOutline
                 className="userListDelete"

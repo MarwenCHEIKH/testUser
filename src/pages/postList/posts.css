@@ -1,13 +1,8 @@
 .postContainer {
   flex: 4;
-  padding: 20px;
+ 
 }
 
 
-.productForm {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
 
-}
 

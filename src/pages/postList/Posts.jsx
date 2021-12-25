@@ -40,13 +40,12 @@ useEffect(() => {
   return (
     <div className="postContainer">
           <div className="productForm">
-                  <h1 >{user.username}</h1>
                   <table border="1" style={{ float: 'left' }}>
         <tbody>
           <tr>
             <td>Username</td>
-            <td>Post title</td>
-            <td>Post body</td>
+            <td>Post Title</td>
+            <td>Post Body</td>
             <td>Action</td>
           </tr>
           {
@@ -57,7 +56,7 @@ useEffect(() => {
                 <td>{item.body}</td>
                 <td>
                   <Link to={"/comments/"+item.id}>
-                      <button className="userListEdit">See comments</button>
+                      <button className="userListEdit">Comments</button>
                   </Link>
                 </td>
 

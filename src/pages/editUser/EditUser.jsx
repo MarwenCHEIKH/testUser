@@ -1,7 +1,12 @@
 import "./editUser.css";
 import { useState, useEffect } from "react";
 export default function EditUser() {
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState({
+    address:{
+      geo:{}
+    },
+    company:{}
+  });
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
