@@ -5,8 +5,8 @@ import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UserList from "./pages/userList/UserList";
 import EditUser from "./pages/editUser/EditUser";
-import ProductList from "./pages/productList/ProductList";
-import Product from "./pages/product/Product";
+import Posts from "./pages/postList/Posts";
+import Comments from "./pages/comments/Comments";
 
 
 function App() {
@@ -25,11 +25,11 @@ function App() {
           <Route path="/user/:userId">
             <EditUser />
           </Route>
-          <Route path="/products">
-            <ProductList />
+          <Route path="/post/:postId">
+            <Posts />
           </Route>
-          <Route path="/product/:productId">
-            <Product />
+          <Route path="/comments/:commentId">
+            <Comments/>
           </Route>
         </Switch>
       </div>

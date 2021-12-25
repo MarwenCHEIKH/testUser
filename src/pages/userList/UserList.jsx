@@ -80,12 +80,15 @@ const handleDelete = async (id) => {
       {
         field: "action",
         headerName: "Action",
-        width: 150,
+        width: 200,
         renderCell: (params) => {
           return (
             <>
               <Link to={"/user/" + params.row.id}>
                 <button className="userListEdit">Edit</button>
+              </Link>
+              <Link to={"/post/" + params.row.id}>
+                <button className="userListPost">See Post</button>
               </Link>
               <DeleteOutline
                 className="userListDelete"

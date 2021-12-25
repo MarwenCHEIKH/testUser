@@ -25,10 +25,12 @@ export default function Sidebar() {
                 Users
               </li>
             </Link>
+            <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
-                Products
+                Posts
               </li>
+            </Link>
           </ul>
         </div>
       </div>
